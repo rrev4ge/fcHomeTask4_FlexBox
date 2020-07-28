@@ -1,21 +1,95 @@
+html {
+    font-family: Arial;
+    font-size: 24px;
+}
+
+
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background: url("../images/formBackground.png");
-
+    background-size: cover;
     min-height: 100vh;
     color: white;
 }
 
-form {
-    padding: 4em;
+.contact_form {
     display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
+    position: absolute;
     justify-content: center;
-    height: 70vh;
-    width: 70vh;
-    box-shadow: 0px 0px 32px -8px rgba(0,0,0,0.75);
+    width: 80%;
+    height: 80%;
+    font-size: 1rem;
+    box-shadow: 0 0 32px 8px rgba(0,0,0,0.75);
+}
+
+
+
+.contact_form ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 95%;
+    height: 95%;
+}
+
+.contact_form li {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p{
+    font-size: 0.7rem;
+    padding: 1em 0 2em;
+}
+
+.contact_form .cardHead {
+    flex-direction: column;
+}
+
+.contact_form label {
+
+    margin-top: 0;
+    min-width: 20%;
+    margin-left: 0;
+}
+
+.contact_form label:last-child{
+
+}
+
+.contact_form input, select{
+    height: 150%;
+}
+
+.contact_form input + input{
+    margin-left: 1%;
+}
+
+input, textarea[name="message"], select[name="subject"] {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.submit {
+    padding: 1em 0;
+    border-top:1px solid white;
+}
+.submit input[type="submit"] {
+    margin-left: 20%;
+    width: 100%;
+    height: 200%;
+    background: none;
+    border:2px solid white;
+    color: white;
+    font-weight: bold;
 }
