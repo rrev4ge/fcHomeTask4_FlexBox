@@ -1,0 +1,155 @@
+body {
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: #262626;
+    height: 10vh;
+
+
+}
+
+#siteLogo {
+    position: absolute;
+    color: white;
+    left: 5%;
+    font-family: "Comic Sans MS", serif;
+    font-size: 24px;
+
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    position: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: 2em 0;
+    font-weight: bold;
+}
+
+.navigation li + li{
+    margin-left: 5em;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+    position: absolute;
+    right: 5%;
+}
+
+
+.button a{
+    border: 2px solid white;
+    padding: 1em 2em;
+    border-radius: 7%;
+    font-size: 0.7em;
+}
+
+main {
+    background: url("../images/navBackground.jpg");
+    background-size: cover;
+    height:90vh;
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    /*align-items: center;*/
+    top: 30%;
+    right: 5%;
+    z-index: 0;
+}
+
+.ads li {
+    display: flex;
+    background: white;
+    padding: 0.2em 0.5em;
+    color: black;
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kelly Slab', bold cursive;
+    font-size: 54px;
+    box-shadow: 1px 1px  5px 1px black;
+}
+
+.ads li:nth-child(2n){
+
+    background: #ecea1c;
+    color: black;
+    margin-top: -5px;
+    margin-left: 20px;
+    margin-right: -20px;
+    z-index: 1;
+}
+
+.ads li:last-child{
+    background: white;
+    color: black;
+    z-index: 0;
+    transform: skewY(-2grad);
+    padding: 0.5em 0.5em  0.2em;
+    margin-top: -5px;
+    margin-left: -40px;
+    margin-right: 40px;
+    box-shadow: none;
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: 40vh;
+
+    }
+
+    #siteLogo {
+        top: 10vh;
+
+    }
+
+    .navigation ul {
+        position: absolute;
+        top: 15vh;
+        left: 5%;
+    }
+
+    .navigation li + li {
+        margin-left: 1em;
+    }
+
+
+
+     .navigation li:last-child {
+         right: unset;
+         left: 0;
+         top: 10vh;
+         margin-left: 0;
+     }
+
+
+
+
+    main {
+        height: 60vh;
+    }
+    .ads {
+        display: none;
+    }
+}
