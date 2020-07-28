@@ -1,6 +1,7 @@
 body {
     text-align: center;
     color: white;
+    height: 100vh;
 }
 
 header {
@@ -112,10 +113,12 @@ main {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
+
+
     header {
         flex-direction: column;
-        height: 40vh;
+        height: 40%;
 
     }
 
@@ -124,11 +127,14 @@ main {
 
     }
 
+
     .navigation ul {
         position: absolute;
         top: 15vh;
         left: 5%;
     }
+
+
 
     .navigation li + li {
         margin-left: 1em;
@@ -138,16 +144,24 @@ main {
 
      .navigation li:last-child {
          right: unset;
+         margin-left: 0;
          left: 0;
          top: 10vh;
-         margin-left: 0;
      }
+
+
+    @media screen and (orientation : landscape){
+        .navigation li:last-child {
+            position: revert;
+            margin-left: 1em;
+        }
+    }
 
 
 
 
     main {
-        height: 60vh;
+        height: 60%;
     }
     .ads {
         display: none;
