@@ -20,7 +20,7 @@ header {
     color: white;
     left: 5%;
     font-family: "Comic Sans MS", serif;
-    font-size: 24px;
+    font-size: 5vh;
 
 }
 
@@ -31,12 +31,12 @@ header {
     color: white;
     align-items: center;
     text-align: center;
-    margin: 2em 0;
+    margin: 2vh 0;
     font-weight: bold;
 }
 
 .navigation li + li{
-    margin-left: 5em;
+    margin-left: 5vw;
 }
 
 
@@ -56,7 +56,7 @@ header {
     border: 2px solid white;
     padding: 1em 2em;
     border-radius: 7%;
-    font-size: 0.7em;
+    font-size: 1vh;
 }
 
 main {
@@ -71,22 +71,22 @@ main {
     flex-direction: column;
     position: absolute;
     /*align-items: center;*/
-    top: 30%;
-    right: 5%;
+    top: 30vh;
+    right: 5vw;
     z-index: 0;
 }
 
 .ads li {
     display: flex;
     background: white;
-    padding: 0.2em 0.5em;
+    padding: 1vh 1vw;
     color: black;
     z-index: 2;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-family: 'Kelly Slab', bold cursive;
-    font-size: 54px;
+    font-size: 7vh;
     box-shadow: 1px 1px  5px 1px black;
 }
 
@@ -105,7 +105,7 @@ main {
     color: black;
     z-index: 0;
     transform: skewY(-2grad);
-    padding: 0.5em 0.5em  0.2em;
+    padding: 2vh 1vw  1vh;
     margin-top: -5px;
     margin-left: -40px;
     margin-right: 40px;
@@ -113,31 +113,31 @@ main {
 
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 768px) {
 
 
     header {
         flex-direction: column;
-        height: 40%;
+        height: 40vh;
 
     }
 
     #siteLogo {
-        top: 10vh;
+        top: 5vh;
 
     }
 
 
     .navigation ul {
         position: absolute;
-        top: 15vh;
+        top: 10vh;
         left: 5%;
     }
 
 
 
     .navigation li + li {
-        margin-left: 1em;
+        margin-left: 3vw;
     }
 
 
@@ -153,15 +153,12 @@ main {
     @media screen and (orientation : landscape){
         .navigation li:last-child {
             position: revert;
-            margin-left: 1em;
+            margin-left: 5vh;
         }
     }
 
-
-
-
     main {
-        height: 60%;
+        height: 60vh;
     }
     .ads {
         display: none;
