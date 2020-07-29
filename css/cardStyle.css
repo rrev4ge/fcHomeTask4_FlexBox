@@ -38,13 +38,13 @@
 .card li {
     display: flex;
     margin:  0 3vw;
+    justify-content: space-between;
 }
 
 img {
     display: flex;
     position: relative;
     height: 1.1vw;
-    right: -11vw;
     z-index: -1;
 }
 
@@ -85,7 +85,6 @@ img {
 
     img {
         height: 2.5vh;
-        right: -15vh;
     }
 
     .card li:first-child {
