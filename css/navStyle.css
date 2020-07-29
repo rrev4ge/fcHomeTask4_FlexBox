@@ -1,42 +1,39 @@
 body {
-    text-align: center;
     color: white;
     height: 100vh;
 }
 
-header {
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     background: #262626;
-    height: 10vh;
-
-
-}
-
-#siteLogo {
-    position: absolute;
-    color: white;
-    left: 5%;
-    font-family: "Comic Sans MS", serif;
-    font-size: 5vh;
+    padding: 0 10vh;
+    text-decoration: none;
+    font-weight: bold;
 
 }
 
-.navigation ul {
+.navigation  {
     display: flex;
     flex-direction: row;
-    position: center;
-    color: white;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 2vh 0;
-    font-weight: bold;
+    margin: 5vh 0;
+
 }
 
-.navigation li + li{
-    margin-left: 5vw;
+.navigation  > li + li{
+    margin-left: 3vw;
+}
+
+
+#siteLogo {
+    font-family: "Comic Sans MS", serif;
+    font-size: 4vh;
+
 }
 
 
@@ -46,23 +43,24 @@ header {
     font-weight: bold;
 }
 
-.button {
-    position: absolute;
-    right: 5%;
-}
 
 
 .button a{
+    text-decoration: none;
+    color: white;
     border: 2px solid white;
-    padding: 1em 2em;
+    padding: 1.5em 2em;
     border-radius: 7%;
     font-size: 1vh;
 }
 
 main {
+    display: flex;
+    justify-content: normal;
     background: url("../images/navBackground.jpg");
-    background-size: cover;
-    height:90vh;
+    background: #ecea1c;
+    /*background-size: cover;*/
+    /*height: 90vh;*/
 }
 
 .ads {
@@ -70,7 +68,6 @@ main {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    /*align-items: center;*/
     top: 30vh;
     right: 5vw;
     z-index: 0;
@@ -113,54 +110,22 @@ main {
 
 }
 
-@media screen and (max-width: 768px) {
+/*
+@media screen and (max-width: 768px) and (orientation: portrait){
 
 
-    header {
+    .header {
         flex-direction: column;
-        height: 40vh;
-
-    }
-
-    #siteLogo {
-        top: 5vh;
-
+        justify-content: unset;
+        align-items: unset;
+        padding: 5vh 5vw;
     }
 
 
-    .navigation ul {
-        position: absolute;
-        top: 10vh;
-        left: 5%;
-    }
-
-
-
-    .navigation li + li {
-        margin-left: 3vw;
-    }
-
-
-
-     .navigation li:last-child {
-         right: unset;
-         margin-left: 0;
-         left: 0;
-         top: 10vh;
-     }
-
-
-    @media screen and (orientation : landscape){
-        .navigation li:last-child {
-            position: revert;
-            margin-left: 5vh;
-        }
-    }
-
-    main {
-        height: 60vh;
-    }
+  .navigation {
+    justify-content: unset;
+  }
     .ads {
         display: none;
     }
-}
+}*/
