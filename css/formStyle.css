@@ -26,8 +26,6 @@ body {
 }
 
 
-
-
 .contact_form li {
     display: inline-flex;
     flex-direction: row;
@@ -44,7 +42,7 @@ body {
 }
 
 .contact_form p{
-    font-size: 0.9rem;
+    font-size: 1.5vh;
     padding: 1vh 0 2vh;
 }
 
@@ -64,7 +62,7 @@ body {
     margin-left: 1vh;
 }
 
-input, textarea[name="message"], select[name="subject"] {
+input, textarea, select {
     width: 100%;
     padding-left: 2vh;
 }
@@ -75,10 +73,60 @@ input, textarea[name="message"], select[name="subject"] {
 }
 .submit input[type="submit"] {
     margin-left: 30vh;
-    width: 100%;
     height: 4vh;
     background: none;
     border:2px solid white;
     color: white;
     font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .contact_form {
+        height: 85vh;
+
+    }
+
+    .contact_form li {
+        margin: unset;
+        padding: unset;
+
+    }
+
+    .contact_form li +li {
+        margin-top: 1vh;
+
+    }
+
+    .contact_form li {
+        flex-direction: column;
+    }
+
+    .contact_form label {
+        width: unset;
+    }
+
+    .contact_form input + input {
+        margin-left: unset;
+        margin-top: 0.5vh;
+    }
+
+    .submit input[type="submit"] {
+        margin-left: unset;
+        margin-top: 1vh;
+        height: unset;
+        background: none;
+        border:2px solid white;
+        color: white;
+        font-weight: bold;
+    }
+
+    input, textarea, select {
+        width: unset;
+        height: unset;
+    }
+
+
 }
