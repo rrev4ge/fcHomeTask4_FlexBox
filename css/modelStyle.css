@@ -1,0 +1,195 @@
+body {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+h1, h2, h3, p {
+    margin: 1vh 25%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 30vh;
+    margin: 2vh 0;
+}
+
+.header .bgImage {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background:url(https://static.pexels.com/photos/248515/pexels-photo-248515.png)  no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+.header h1 {
+
+    font-size: 4vh;
+
+}
+
+.lnkBtn {
+    display: flex;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    background: #333;
+    text-decoration: none;
+    color: white;
+    margin-top: 3vh;
+}
+
+.lnkBtn:hover {
+    background: white;
+    color: #333;
+}
+
+
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    background: #eaeaea;
+    padding: 4vh 0;
+
+}
+
+
+
+.columns {
+    columns: 2
+}
+
+
+.solutions {
+    padding: 4vh 25% 2vh;
+}
+
+.solutions ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.solutions li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    color: #333;
+    width: 280px;
+    margin-bottom: 2vh;
+}
+
+.solutions li img {
+    width: 100%;
+    height: auto;
+}
+
+.solutions div {
+    padding: 2vh 1vh;
+}
+
+.solutions li p, .solutions li h3 {
+    max-width: unset;
+    margin: unset;
+    padding-bottom: 2vh;
+}
+
+
+
+
+.aboutUs ul {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+
+}
+
+.aboutUs li {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 4vh 0;
+}
+
+
+.aboutUs li:first-child {
+    background-color: #2690d4;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: #000000;
+}
+
+.footer li{
+    width: 50%;
+    padding: 4vh 0;
+}
+
+.aboutUs a, .footer a {
+    text-decoration: none;
+    color: mediumblue;
+}
+
+.aboutUs a {
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    h1, h2, h3, p {
+        margin: 1vh 10%;
+    }
+
+    .aboutUs ul, .footer {
+        flex-direction: column;
+        width: unset;
+    }
+
+    .aboutUs li {
+        width: unset;
+    }
+    .solutions {
+        padding: 4vh 4vh 2vh;
+    }
+
+    .columns {
+        columns: unset;
+    }
+
+}
+
+
