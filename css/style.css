@@ -1,0 +1,43 @@
+body {
+    background: #333;
+    color: white;
+    height: 100vh;
+}
+.header  {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 40% 0 10vw;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation li + li {
+
+    margin-left: 5vw;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#siteLogo {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 5vh;
+  }
+
+main {
+    display: flex;
+    background: url("https://images5.alphacoders.com/687/thumb-1920-687579.jpg");
+    background-size: cover;
+    height: 90vh;
+}
