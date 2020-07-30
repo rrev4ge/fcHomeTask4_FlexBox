@@ -1,0 +1,132 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background: url("../images/formBackground.png");
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+.contact_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+    font-size: 3vh;
+    box-shadow: 0 0 32px 8px rgba(0,0,0,0.75);
+    padding: 3vh;
+}
+
+
+.contact_form li {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 2vh 0;
+}
+
+.contact_form .cardHead {
+    flex-direction: column;
+}
+
+.contact_form h1 {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.contact_form p{
+    font-size: 1.5vh;
+    padding: 1vh 0 2vh;
+}
+
+
+
+.contact_form label {
+
+    margin-top: 0;
+    min-width: 30vh;
+}
+
+.contact_form input, select{
+    height: 4vh;
+}
+
+.contact_form input + input{
+    margin-left: 1vh;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding-left: 2vh;
+}
+
+.submit {
+    padding: 2vh 0;
+    border-top:1px solid white;
+}
+.submit input[type="submit"] {
+    margin-left: 30vh;
+    height: 4vh;
+    background: none;
+    border:2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .contact_form {
+        height: 85vh;
+
+    }
+
+    .contact_form li {
+        margin: unset;
+        padding: unset;
+
+    }
+
+    .contact_form li +li {
+        margin-top: 1vh;
+
+    }
+
+    .contact_form li {
+        flex-direction: column;
+    }
+
+    .contact_form label {
+        width: unset;
+    }
+
+    .contact_form input + input {
+        margin-left: unset;
+        margin-top: 0.5vh;
+    }
+
+    .submit input[type="submit"] {
+        margin-left: unset;
+        margin-top: 1vh;
+        height: unset;
+        background: none;
+        border:2px solid white;
+        color: white;
+        font-weight: bold;
+    }
+
+    input, textarea, select {
+        width: unset;
+        height: unset;
+    }
+
+
+}
