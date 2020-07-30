@@ -1,0 +1,105 @@
+
+
+.cardBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 25vw;
+    background: #ff8b97;
+    border-radius: 10px;
+    color: white;
+    z-index: 0;
+    flex-shrink: 1;
+}
+
+
+
+.card + .card {
+    margin-left: 3vw;
+}
+
+.card:nth-child(2){
+    background: #375980;
+}
+
+.card:nth-child(3){
+    background: #24d2bf;
+}
+
+
+.card li {
+    display: flex;
+    margin:  0 3vw;
+    justify-content: space-between;
+}
+
+img {
+    display: flex;
+    position: relative;
+    height: 1.1vw;
+    z-index: -1;
+}
+
+.card li:first-child {
+    margin-top: 5vh;
+    font-size: 1.1vw;
+}
+
+.card li:nth-child(2) {
+    margin-top: 2vh;
+    font-size: 2vw;
+}
+
+.card li:last-child {
+    font-size: 0.9vw;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-device-width : 768px) and (orientation : portrait){
+
+    .cardBlock {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 25vh;
+        width: 70vw;
+    }
+
+    .card + .card {
+        margin-left: 0;
+        margin-top: 3%;
+    }
+    .card li {
+        margin:  0 3vh;
+    }
+
+    img {
+        height: 2.5vh;
+    }
+
+    .card li:first-child {
+        margin-top: 5vh;
+        font-size: 2.5vh;
+    }
+
+    .card li:nth-child(2) {
+        margin-top: 1.5vh;
+        font-size: 4vh;
+    }
+
+    .card li:last-child {
+        font-size: 2vh;
+        margin-top: 4vh;
+    }
+
+}
