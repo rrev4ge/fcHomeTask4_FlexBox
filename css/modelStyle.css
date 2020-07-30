@@ -1,0 +1,172 @@
+body {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 1em;
+}
+
+.header .bgImage{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background:url(https://static.pexels.com/photos/248515/pexels-photo-248515.png)  no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.content {
+    display: inline-block;
+    position: relative;
+    margin: 5% 25%;
+}
+
+.content h1 {
+    padding: 0;
+    display: inline-block;
+    font-size: 2em;
+
+}
+
+.content p {
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.lnkBtn {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    background: #333;
+    text-decoration: none;
+    color: white;
+
+}
+
+.lnkBtn:hover {
+    background: white;
+    color: #333;
+}
+
+
+
+.article {
+    display: block;
+    color: #333;
+    width: 100%;
+    background: #eaeaea;
+    z-index: -1;
+
+}
+
+.article div {
+    padding: 2em 25%;
+    display: inline-block;
+}
+
+.columns {
+    columns: 2
+}
+
+
+.solutions {
+    display: block;
+    width: 100%;
+    padding: 2em 0;
+    background-color: #333;
+
+}
+
+.solutions ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.solutions li {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    margin: 0 1em 0 0;
+    width: 15%;
+}
+
+
+
+
+.solutions ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.solutions li div {
+    margin: 0;
+    padding: 0 1em 3em;
+}
+
+
+
+
+
+
+.aboutUs {
+    display: block;
+}
+
+.aboutUs div {
+    display: inline-block;
+    width: 50%;
+    padding: 0 0 2em;
+    vertical-align: top;
+
+}
+
+
+.aboutUs div:first-child {
+    background-color: #2690d4;
+}
+
+.aboutUs div h3{
+    padding: 2.5em 0 1em;
+}
+
+
+
+.footer {
+    padding: 2em;
+    background: #000000;
+    color: white;
+    line-height: 1.5;
+}
+
+.footer div{
+    display: inline-block;
+    width: 50%;
+}
+
+.aboutUs a, .footer a {
+    text-decoration: none;
+    color: mediumblue;
+}
+
+
+
+
