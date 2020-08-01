@@ -1,23 +1,28 @@
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .cardBlock {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    min-height: 100vh;
+    max-width: 1000px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    height: 30vh;
-    width: 25vw;
+    height: 200px;
+    width: 300px;
     background: #ff8b97;
     border-radius: 10px;
     color: white;
     z-index: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 
@@ -37,31 +42,30 @@
 
 .card li {
     display: flex;
-    margin:  0 3vw;
+    margin:  0 20px;
     justify-content: space-between;
 }
 
 img {
     display: flex;
     position: relative;
-    height: 1.1vw;
+    height: 1.1em;
     z-index: -1;
 }
 
 .card li:first-child {
-    margin-top: 5vh;
-    font-size: 1.1vw;
+    margin-top: 1.5em;
+    font-size: 1.1em;
 }
 
 .card li:nth-child(2) {
-    margin-top: 2vh;
-    font-size: 2vw;
+    margin-top: 0.5em;
+    font-size: 2em;
 }
 
 .card li:last-child {
-    font-size: 0.9vw;
-    margin-top: 8vh;
-    margin-bottom: 2vh;
+    font-size: 0.9em;
+    margin-top: 3em;
 }
 
 
@@ -71,20 +75,20 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    transform: scale(1.3, 11);
+    transform: scale(1.3, 9);
     background: white;
     opacity: 15%;
     z-index: 3;
 }
 
 .circle-a {
-    top: -50%;
-    right: -80%;
+    top: -100px;
+    right: -250px;
 }
 
 .circle-b {
-    bottom: -10%;
-    right: -60%;
+    bottom: -50px;
+    right: -150px;
 
 }
 
@@ -95,35 +99,18 @@ img {
     }
 
     .card {
-        height: 25vh;
-        width: 70vw;
+        height: 170px;
+        width: 270px;
     }
 
     .card + .card {
         margin-left: 0;
-        margin-top: 3%;
-    }
-    .card li {
-        margin:  0 3vh;
+        margin-top: 10px;
     }
 
-    img {
-        height: 2.5vh;
-    }
 
-    .card li:first-child {
-        margin-top: 5vh;
-        font-size: 2.5vh;
-    }
-
-    .card li:nth-child(2) {
-        margin-top: 1.5vh;
-        font-size: 4vh;
-    }
-
-    .card li:last-child {
-        font-size: 2vh;
-        margin-top: 4vh;
+    .circle {
+        transform: scale(1.3, 22);
     }
 
 }
