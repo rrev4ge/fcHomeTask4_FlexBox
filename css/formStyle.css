@@ -18,8 +18,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80vw;
-    height: 80vh;
+    width: 60vw;
+    height: 70vh;
     font-size: 3vh;
     box-shadow: 0 0 32px 8px rgba(0,0,0,0.75);
     padding: 3vh;
@@ -86,6 +86,7 @@ input, textarea, select {
 
     .contact_form {
         height: 85vh;
+        width: 80vw;
 
     }
 
