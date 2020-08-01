@@ -7,7 +7,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-items: center;
     flex-direction: row;
     background: #262626;
@@ -103,14 +103,13 @@ main {
 
 }
 
-/*
 @media screen and (max-width: 768px) and (orientation: portrait){
 
 
     .header {
         flex-direction: column;
-        justify-content: unset;
-        align-items: unset;
+        justify-content: right;
+        align-items: start;
         padding: 5vh 5vw;
     }
 
@@ -119,6 +118,8 @@ main {
     justify-content: unset;
   }
     .ads {
-        display: none;
+        /*display: none;*/
+        top: 40vh;
     }
-}*/
+}
+
